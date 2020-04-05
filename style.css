@@ -1,0 +1,39 @@
+/* CSS Document */
+
+/* General Formatting */
+.content {
+    margin:0 auto;
+}
+
+/* Header */
+.name {
+    background-color: lightskyblue;
+    padding: .5%;
+}
+
+.name h1 {
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 300%;
+}
+
+.menu {
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: .5%;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: aliceblue;
+    color: black;
+}
