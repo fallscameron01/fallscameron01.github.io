@@ -6,6 +6,8 @@
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
         <link rel="stylesheet" type="text/css" href = "style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="scripting/loadFromFile.js"></script>
     </head>
     <body>
         <div class="content">
@@ -23,10 +25,10 @@
             </div>
 
             <div class="image"></div>
-            
+            <div class="about_me">
+                <script>$(document).ready(loadFromFile("about_me", "data/AboutMe.txt"));</script>
+            </div>
             <div class="slideshow"></div>
-            
-            <div class="about_me"><p>UNDER CONSTRUCTION</p></div>
         </div>
     </body>
 </html>
