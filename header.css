@@ -1,4 +1,4 @@
-/* CSS Document */
+/* CSS Document - Header */
 
 /* General Formatting */
 .content {
@@ -20,6 +20,7 @@
 .menu {
     background-color: lightblue;
     overflow: hidden;
+    margin-bottom: 2%;
 }
 
 .menu a {
