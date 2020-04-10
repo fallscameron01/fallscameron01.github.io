@@ -1,0 +1,32 @@
+/* CSS Document - index */
+
+/* About Me Section */
+.about_table table td {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.about_table th {
+    font-size: 200%;
+}
+
+.about_cell {
+    border: 1px solid black;
+}
+
+.image {
+    float: left;
+}
+
+.image img {
+    width: 300px;
+    height: 400px;
+}
+
+.about_me {
+    float: left;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin: 1%;
+}
+
