@@ -4,10 +4,6 @@
 .tail {
     background-color: lightskyblue;
     margin-bottom: 5%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .tail a {
