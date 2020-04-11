@@ -6,21 +6,13 @@
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
         <link rel="stylesheet" type="text/css" href = "../styling/header.css">
+        <script src="scripting/includeHTML.js"></script> <!--includeHTML()-->
     </head>
     <body>
         <div class="content">
-            <div class="header">
-                <div class="name">
-                    <h1>Cameron Falls</h1>
-                </div>
-
-                <div class="menu">
-                    <a href="../index.html">Home</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="posts.html">Posts</a>
-                    <a href="projects.html">Projects</a>
-                </div>
-            </div>
+            <!--Header-->
+            <div include-html="header.html"></div>
         </div>
+        <script>includeHTML();</script>
     </body>
 </html>
