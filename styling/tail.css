@@ -10,7 +10,7 @@
     width: fit-content;
     margin: auto;
     display: block;
-    background-color: lightblue;
+    
     color: black;
     text-align: center;
     padding: .5%;
@@ -18,12 +18,26 @@
     text-decoration: none;
 }
 
-.tail a:hover {
-    background-color: aliceblue;
-    color: black;
-}
-
 .tail p {
     text-align: center;
     margin-bottom: 5%;
+}
+
+.tail .links img {
+    float: left;
+    padding: 5px;
+}
+
+.tail .links p {
+    float: left;
+    
+    font-size: 80%;
+}
+
+.tail .links table {
+    background-color: lightblue;
+}
+
+.tail .links table:hover {
+    background-color: aliceblue;
 }
