@@ -1,5 +1,13 @@
 /* CSS Document - index */
 
+body {
+    margin: 0px;
+}
+
+.content {
+    margin:0 auto;
+}
+
 /* About Me Section */
 .about_table table td {
     border-collapse: collapse;

@@ -1,11 +1,10 @@
 /* CSS Document - Header */
 
-/* General Formatting */
-.content {
-    margin:0 auto;
+/* Header */
+.header {
+    margin: 0px;
 }
 
-/* Header */
 .name {
     background-color: lightskyblue;
     padding: .5%;

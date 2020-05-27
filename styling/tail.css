@@ -3,7 +3,7 @@
 /* Tail */
 .tail {
     background-color: lightskyblue;
-    margin-bottom: 5%;
+    margin-bottom: 0px;
     margin-top: 5%;
 }
 
@@ -22,6 +22,7 @@
 .tail p {
     text-align: center;
     margin-bottom: 0%;
+    padding-bottom: 1%;
 }
 
 .tail a:hover {
