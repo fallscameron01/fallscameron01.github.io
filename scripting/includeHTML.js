@@ -1,3 +1,7 @@
+/*
+    Includes a block of HTML code at the given location.
+    The location and code snippet are designated by the tag include-html="file.html" in a div.
+*/
 function includeHTML() {
     var elements;
     var i;

@@ -1,3 +1,7 @@
+/*
+    Loads text from a file.
+*/
+
 const MY_URL = "https://fallscameron01.github.io/";
 
 function loadFromFile(element, filename)
