@@ -14,7 +14,7 @@
 .name h1 {
     text-align: center;
     text-overflow: ellipsis;
-    font-size: 300%;
+    font-size: 325%;
 }
 
 .menu {
@@ -30,11 +30,27 @@
     color: black;
     text-align: center;
     padding: .5%;
-    font-size: 150%;
+    font-size: 175%;
     text-decoration: none;
 }
 
 .menu a:hover {
     background-color: aliceblue;
     color: black;
+}
+
+.menu img {
+    float: right;
+}
+.menu .github_picture {
+    float:right;
+}
+
+.menu .linkedin_picture {
+    float:right
+}
+
+.menu .linkedin_picture img {
+    width: 32px;
+    height: 32px;
 }
