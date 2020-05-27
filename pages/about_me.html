@@ -7,13 +7,39 @@
         <meta name="keywords" content="Cameron,Falls">
         <link rel="stylesheet" type="text/css" href = "../styling/header.css">
         <link rel="stylesheet" type="text/css" href = "../styling/tail.css">
+        <link rel="stylesheet" type="text/css" href = "../styling/pages/about_me.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQuery-->
+        <script src="../scripting/loadFromFile.js"></script> <!--loadFromFile()-->
         <script src="../scripting/includeHTML.js"></script> <!--includeHTML()-->
     </head>
     <body>
         <div class="content">
             <!--Header-->
             <div include-html="/pages/elements/header.html"></div>
-
+            
+            <!--About Me-->
+            <div class="about_table">
+                <table>
+                    <tr>
+                        <th></th> <!--Empty-->
+                        <th>About Me</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="image">
+                                <img src="../data/images/Cameron.jpg" alt="Cameron Falls">
+                            </div>
+                        </td>
+                        <td class="about_cell">
+                            <div class="about_me">
+                                <script>$(document).ready(loadFromFile("about_me", "data/AboutMe.txt"));</script>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skills"></div>
+            
             <!--Tail-->
             <div include-html="/pages/elements/tail.html"></div>
         </div>
