@@ -33,7 +33,6 @@
 /* Skills Section */
 .skills {
     text-align: center;
-    padding-top: 5%;
 }
 
 .skills table {
@@ -42,10 +41,13 @@
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
+    margin-top: 5%;
 }
 
 .skills th {
     font-size: 200%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .skills td {
