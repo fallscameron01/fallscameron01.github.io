@@ -5,17 +5,21 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
-        <link rel="stylesheet" type="text/css" href = "../styling/header.css">
-        <link rel="stylesheet" type="text/css" href = "../styling/tail.css">
-        <link rel="stylesheet" type="text/css" href = "../styling/pages/about_me.css">
+        <link rel="stylesheet" type="text/css" href="../styling/general.css">
+        <link rel="stylesheet" type="text/css" href="../styling/header.css">
+        <link rel="stylesheet" type="text/css" href="../styling/tail.css">
+        <link rel="stylesheet" type="text/css" href="../styling/pages/about_me.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQuery-->
         <script src="../scripting/loadFromFile.js"></script> <!--loadFromFile()-->
         <script src="../scripting/includeHTML.js"></script> <!--includeHTML()-->
     </head>
+    
     <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
         <div class="content">
-            <!--Header-->
-            <div include-html="/pages/elements/header.html"></div>
             
             <!--About Me-->
             <div class="about_table">
@@ -38,11 +42,76 @@
                     </tr>
                 </table>
             </div>
-            <div class="skills"></div>
             
-            <!--Tail-->
-            <div include-html="/pages/elements/tail.html"></div>
+            <!--Skills-->
+            <div class="skills">
+                <table id="Programming_Languages">
+                    <tr>
+                        <th colspan="2">Programming Languages</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../data/images/C++_Logo.png" alt="C++ Logo">
+                        </td>
+                        <td>
+                            <h1>C++</h1>
+                            <h2>Strong Knowledge and Experience</h2>
+                            <p>I have used <b>C++</b> in many classes for various projects, as well as with personal projects. Classes taken include <b>Introduction to Programming</b> and <b>Data Structures</b>.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../data/images/python_logo.png" alt="Python Logo">
+                        </td>
+                        <td>
+                            <h1>Python</h1>
+                            <h2>Strong Knowledge and Experience</h2>
+                            <p>I have used <b>Python</b> for many personal and organizational projects. I have primarily used Python for <b>Computer Vision</b> tasks, such as object identification with drones. In addition, I have also used Python for projects in a <b>Discrete Mathematics for Computer Science</b> class.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../data/images/Java_logo.png" alt="Java Logo">
+                        </td>
+                        <td>
+                            <h1>Java</h1>
+                            <h2>Knowledgeable</h2>
+                            <p>I have learned <b>Java</b> through a high school course and self-research. I have used Java for projects in that course and gained knowledge of the language through personal testing.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Other Skills">
+                    <tr>
+                        <th colspan="2">Other Skills</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../data/images/Git-Icon.png" alt="Git Logo">
+                        </td>
+                        <td>
+                            <h1>Git</h1>
+                            <h2>Strong Knowledge and Experience</h2>
+                            <p>I use <b>Git</b> for every project I do. I have experience using Git through Github for my personal projects, and I have used Gitlab for classes, including <b>Data Structures</b>. I have used Git to better organize my projects and workflow, as well as to keep track of changes.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../data/images/Microsoft_Office_Logo.png" alt="Microsoft Office Logo">
+                        </td>
+                        <td>
+                            <h1>Microsoft Office</h1>
+                            <h2>Strong Knowledge and Experience</h2>
+                            <p>I frequently use <b>Microsoft Office</b> applications for classes and personal projects. I have experience using Microsoft <b>Word</b>, <b>Excel</b>, and <b>Powerpoint</b>.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
+
+        <!--Tail-->
+        <div include-html="/pages/elements/tail.html"></div>
+
         <script>includeHTML();</script>
     </body>
 </html>

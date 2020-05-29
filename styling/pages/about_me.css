@@ -29,3 +29,54 @@
     word-wrap: break-word;
     margin: 1%;
 }
+
+/* Skills Section */
+.skills {
+    text-align: center;
+}
+
+.skills table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.skills th {
+    font-size: 200%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skills td {
+    border: 1px solid black;
+}
+
+.skills img {
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+}
+
+.skills p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 110%;
+}
+
+.skills h1 {
+    color: navy;
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.skills h2 {
+    color: salmon;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

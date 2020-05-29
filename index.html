@@ -5,18 +5,21 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
-        <link rel="stylesheet" type="text/css" href = "styling/header.css">
-        <link rel="stylesheet" type="text/css" href = "styling/tail.css">
-        <link rel="stylesheet" type="text/css" href = "styling/pages/index.css">
+        <link rel="stylesheet" type="text/css" href="styling/general.css">
+        <link rel="stylesheet" type="text/css" href="styling/header.css">
+        <link rel="stylesheet" type="text/css" href="styling/tail.css">
+        <link rel="stylesheet" type="text/css" href="styling/pages/index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQuery-->
         <script src="scripting/loadFromFile.js"></script> <!--loadFromFile()-->
         <script src="scripting/includeHTML.js"></script> <!--includeHTML()-->
     </head>
+
     <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
         <div class="content">
-            <!--Header-->
-            <div include-html="/pages/elements/header.html"></div>
-            
             <!--About Me-->
             <div class="about_table">
                 <table>
@@ -38,13 +41,17 @@
                     </tr>
                 </table>
             </div>
-            <div class="recent_posts"></div>
-            <div class="slideshow"></div>
-            <div class="information"></div>
 
-            <!--Tail-->
-            <div include-html="/pages/elements/tail.html"></div>
+            <div class="recent_posts"></div>
+
+            <div class="slideshow"></div>
+
+            <div class="information"></div>
         </div>
+        
+        <!--Tail-->
+        <div include-html="/pages/elements/tail.html"></div>
+
         <script>includeHTML();</script>
     </body>
 </html>
