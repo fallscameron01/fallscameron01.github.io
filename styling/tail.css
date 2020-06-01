@@ -5,6 +5,8 @@
     background-color: lightskyblue;
     margin-bottom: 0px;
     margin-top: 5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .tail a {
@@ -17,6 +19,9 @@
     padding: .5%;
     font-size: 150%;
     text-decoration: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .tail p {

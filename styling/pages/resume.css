@@ -1,0 +1,33 @@
+.content object {
+    width: 8in;
+    height: 11in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download {
+    margin: auto;
+    width: fit-content;
+}
+
+.content a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    background-color: lightblue;
+    color: black;
+    padding: 2%;
+    font-size: 175%;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.menu .menu_resume {
+    background-color: lightcyan;
+}
+
+.menu .menu_resume:hover {
+    background-color: lightcyan;
+}

@@ -1,31 +1,41 @@
 /* CSS Document - index */
 
 /* About Me Section */
-.about_table table td {
+.about_me table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_me th {
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about_me td {
     border-collapse: collapse;
     border-spacing: 0px;
 }
 
-.about_table th {
-    font-size: 200%;
+.about_me img {
+    float: left;
+    width: 300px;
+    height: 400px;
 }
 
 .about_cell {
     border: 1px solid black;
 }
 
-.image {
-    float: left;
-}
-
-.image img {
-    width: 300px;
-    height: 400px;
-}
-
-.about_me {
-    float: left;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+.about_text {
     margin: 1%;
+    font-family: sans-serif;
+    font-size: 110%;
+}
+
+.menu .menu_home {
+    background-color: lightcyan;
+}
+
+.menu .menu_home:hover {
+    background-color: lightcyan;
 }
