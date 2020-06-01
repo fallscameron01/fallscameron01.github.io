@@ -31,3 +31,11 @@
     font-family: sans-serif;
     font-size: 110%;
 }
+
+.menu .menu_home {
+    background-color: lightcyan;
+}
+
+.menu .menu_home:hover {
+    background-color: lightcyan;
+}

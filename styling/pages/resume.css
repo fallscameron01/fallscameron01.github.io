@@ -23,3 +23,11 @@
     border: 1px solid black;
     margin-top: 5%;
 }
+
+.menu .menu_resume {
+    background-color: lightcyan;
+}
+
+.menu .menu_resume:hover {
+    background-color: lightcyan;
+}
