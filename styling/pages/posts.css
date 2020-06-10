@@ -1,0 +1,49 @@
+/* CSS Document - posts */
+
+.menu .menu_posts {
+    background-color: lightcyan;
+}
+
+.menu .menu_posts:hover {
+    background-color: lightcyan;
+}
+
+/* Post Links */
+
+.post_links table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 1%;
+}
+
+.post_links th {
+    border: 1px solid black;
+    font-size: 200%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post_links td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.post_links img {
+    width: 300px;
+    height: 300px;
+}
+
+.post_links a img {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+}
+
+.post_links a {
+    text-decoration: none;
+    color: blue;
+}
