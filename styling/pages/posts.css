@@ -1,0 +1,87 @@
+/* CSS Document - Posts */
+
+.menu .menu_posts {
+    background-color: lightcyan;
+}
+
+.menu .menu_posts:hover {
+    background-color: lightcyan;
+}
+
+/* Post Links - Main Post Page */
+
+.post_links table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 1%;
+}
+
+.post_links th {
+    border: 1px solid black;
+    font-size: 200%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.post_links td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.post_links img {
+    width: 300px;
+    height: 300px;
+}
+
+.post_links a img {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+}
+
+.post_links a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* General Post Styling - Individual Post Pages */
+.post_head {
+    margin: 75px;
+    margin-bottom: 0px;
+}
+
+.post_head h1 {
+    font-size: 300%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.post_head p {
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post_head a {
+    text-decoration: none;
+    color: blue;
+}
+
+.post {
+    margin: 75px;
+    margin-top: 0px;
+}
+
+.post p {
+    text-indent: 20px;
+    font-size: 110%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
