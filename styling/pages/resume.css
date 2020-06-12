@@ -15,13 +15,19 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    float: left;
     background-color: lightblue;
     color: black;
-    padding: 2%;
     font-size: 175%;
     border: 1px solid black;
-    margin-top: 5%;
+    margin-top: 10px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.content a:hover {
+    background-color: aliceblue;
 }
 
 .menu .menu_resume {
