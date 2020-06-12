@@ -12,18 +12,18 @@
 }
 
 .content a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
     background-color: lightblue;
-    color: black;
-    font-size: 175%;
     border: 1px solid black;
-    margin-top: 10px;
-    width: min-content;
+    color: black;
+    display: block;
+    font-size: 175%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: min-content;
 }
 
 .content a:hover {
