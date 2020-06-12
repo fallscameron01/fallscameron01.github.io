@@ -1,0 +1,43 @@
+/* CSS Document - Projects */
+
+.menu .menu_projects {
+    background-color: lightcyan;
+}
+
+.menu .menu_projects:hover {
+    background-color: lightcyan;
+}
+
+.projects table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 1%;
+}
+
+.projects th {
+    border: 1px solid black;
+    font-size: 200%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projects td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 110%;
+}
+
+.projects img {
+    width: 300px;
+    height: 300px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: blue;
+}

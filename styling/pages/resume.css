@@ -12,16 +12,22 @@
 }
 
 .content a {
+    background-color: lightblue;
+    border: 1px solid black;
+    color: black;
     display: block;
+    font-size: 175%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
-    float: left;
-    background-color: lightblue;
-    color: black;
-    padding: 2%;
-    font-size: 175%;
-    border: 1px solid black;
-    margin-top: 5%;
+    width: min-content;
+}
+
+.content a:hover {
+    background-color: aliceblue;
 }
 
 .menu .menu_resume {
