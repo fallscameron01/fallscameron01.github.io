@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plotting Q-Learning - Cameron Falls</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Cameron Falls webpage">
+        <meta name="keywords" content="Cameron,Falls">
+        <link rel="stylesheet" type="text/css" href="../../styling/general.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/header.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/tail.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/pages/posts.css">
+        <script src="../../scripting/includeHTML.js"></script> <!--includeHTML()-->
+    </head>
+
+    <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
+        <div class="content">
+            <div class="post_head">
+                <h1>Plotting Q-Learning</h1>
+                <p class="date"><b>Date Posted:</b> 6/16/2020</p>
+                <a href="https://github.com/fallscameron01/Plot_Q-Learning"><p>View this Project on Github</p></a>
+            </div>
+            <div class="post">
+                <p>
+                    Following my project in the <a href="Q-Learning_CartPole.html">Q-Learning Cart Pole problem</a>, I decided to create an easier way to visualize the Q-Learning
+                    process. For this project, the goal was to easily create graphs to display the results and progression from Q-Learning. Using pandas and matplotlib, I created
+                    a Python class that makes it easy to save and plot this data. First, I created a way to show the Q-Table results from the learning process. Using the Plot class
+                    created for this project, I plotted the resulting Q-Table from my Cart Pole project.
+                </p>
+                <img src="../../data/posts/Plot_Q-Learning/QTable_Weights.png" style="width: 100%;">
+                <p>
+                    A smaller example with random values is below.
+                </p>
+                <img src="../../data/posts/Plot_Q-Learning/QTable_Plot_Example.png" style="width: 75%;">
+                <p>
+                    The Plot class also contains a function to print the Q-Table to the console. The second feature of the Plot class is the ability to track reward values across
+                    episodes. Applying this to my Cart Pole project yields the following line graph.
+                </p>
+                <img src="../../data/posts/Plot_Q-Learning/RewardPlot.png" style="width: 100%;">
+                <p>
+                    Another example with random rewards is below.
+                </p>
+                <img src="../../data/posts/Plot_Q-Learning/Reward_Plot_Example.png" style="width: 75%;">
+            </div>
+        </div>
+
+        <!--Tail-->
+        <div include-html="/pages/elements/tail.html"></div>
+
+        <script>includeHTML();</script>
+    </body>
+</html>
