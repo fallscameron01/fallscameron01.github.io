@@ -39,3 +39,49 @@
 .menu .menu_home:hover {
     background-color: lightcyan;
 }
+
+/* Featured Projects Section */
+
+.featured_projects {
+    margin: 5%;
+}
+
+.featured_projects h1 {
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.featured_projects table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.featured_projects th {
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid black;
+    padding: 5%;
+}
+
+.featured_projects td {
+    width: 200px;
+    padding: 1%;
+}
+
+.featured_projects img {
+    width: 200px;
+    height: 200px;
+}
+
+.featured_projects a {
+    text-decoration: none;
+    color: blue;
+}
+
+.featured_projects a img {
+    width: 32px;
+    height: 32px;
+}

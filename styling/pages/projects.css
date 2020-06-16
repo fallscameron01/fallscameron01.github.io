@@ -30,6 +30,7 @@
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 110%;
+    width: 500px;
 }
 
 .projects img {
@@ -40,4 +41,19 @@
 .projects a {
     text-decoration: none;
     color: blue;
+}
+
+.projects a img {
+    width: 32px;
+    height: 32px;
+}
+
+.projects h3 {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projects ul {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
