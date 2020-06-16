@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cameron Falls - Posts</title>
+        <title>Q-Learning Cart Pole - Cameron Falls</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
@@ -20,7 +20,8 @@
         <div class="content">
             <div class="post_head">
                 <h1>Q-Learning Cart Pole</h1>
-                <p class="date"><b>Date Posted:</b> 6/11/2020</p>
+                <p><b>Date Posted:</b> 6/11/2020</p>
+                <p><b>Updated: </b> 6/16/2020</p>
                 <a href="https://github.com/fallscameron01/Q-Learning_CartPole"><p>View this Project on Github</p></a>
             </div>
             <div class="post">
@@ -50,6 +51,12 @@
                     episodes. This means it will take completely random actions for the first 225 episodes in order to teach the model. After the 225 episodes, it will be less likely
                     that a random action is taken so that the model can be reinforced.
                 </p>
+                <p>
+                    A line graph of the rewards at each episode is shown below. This graph was generated using <a href="Plot_Q-Learning.html">a tool I created</a>. The rewards are
+                    low for the first 225 episodes, where random actions were taken. After the model begins predicting the next action, the reward values are much higher. By the
+                    400th episode, the model consistently gets rewards above 300 and frequently at the maximum value of 500.
+                </p>
+                <img src="../../data/posts/Plot_Q-Learning/RewardPlot.png" style="width: 100%;">
             </div>
         </div>
 
