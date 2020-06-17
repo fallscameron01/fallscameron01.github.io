@@ -62,8 +62,13 @@
 .featured_projects th {
     font-size: 150%;
     font-family: 'Courier New', Courier, monospace;
-    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
     padding: 5%;
+}
+
+.featured_projects .featured_projects_text {
+    border-right: 1px solid black;
 }
 
 .featured_projects td {
