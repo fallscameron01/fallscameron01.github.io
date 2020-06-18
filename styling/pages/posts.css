@@ -20,15 +20,12 @@
 }
 
 .post_links th {
-    border: 1px solid black;
     font-size: 200%;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .post_links td {
-    border: 1px solid black;
-    text-align: center;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 110%;
@@ -38,17 +35,14 @@
 .post_links img {
     width: 300px;
     height: 300px;
+    margin-left: 50px;
 }
 
 .post_links a img {
     width: 32px;
     height: 32px;
     padding: 10px;
-}
-
-.post_links a {
-    text-decoration: none;
-    color: blue;
+    margin-left: 0px;
 }
 
 /* General Post Styling - Individual Post Pages */
