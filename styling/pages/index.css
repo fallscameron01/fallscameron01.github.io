@@ -90,3 +90,34 @@
     width: 32px;
     height: 32px;
 }
+
+/* Recent Posts Section */
+
+.recent_posts {
+    margin: 5%;
+}
+
+.recent_posts h1 {
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recent_posts table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.recent_posts th {
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1%;
+}
+
+.recent_posts td {
+    width: 50%;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
