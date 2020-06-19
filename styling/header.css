@@ -11,27 +11,27 @@
 }
 
 .name h1 {
+    font-size: 325%;
     text-align: center;
     text-overflow: ellipsis;
-    font-size: 325%;
 }
 
 .menu {
     background-color: lightblue;
-    overflow: hidden;
-    margin-bottom: 2%;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    margin-bottom: 2%;
+    overflow: hidden;
 }
 
 .menu a {
-    float: left;
-    display: block;
     background-color: lightblue;
     color: black;
-    text-align: center;
-    padding: .5%;
+    display: block;
+    float: left;
     font-size: 175%;
+    padding: .5%;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -52,6 +52,6 @@
 }
 
 .menu .linkedin_picture img {
-    width: 32px;
     height: 32px;
+    width: 32px;
 }

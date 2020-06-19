@@ -11,8 +11,8 @@ h1 {
 }
 
 .about_me th {
-    font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
 }
 
 .about_me td {
@@ -22,8 +22,8 @@ h1 {
 
 .about_me img {
     float: left;
-    width: 300px;
     height: 400px;
+    width: 300px;
 }
 
 .about_cell {
@@ -31,9 +31,9 @@ h1 {
 }
 
 .about_text {
-    margin: 1%;
     font-family: sans-serif;
     font-size: 110%;
+    margin: 1%;
 }
 
 .menu .menu_home {
@@ -51,23 +51,23 @@ h1 {
 }
 
 .featured_projects h1 {
-    font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
 }
 
 .featured_projects table {
-    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
-    border-collapse: collapse;
+    text-align: center;
 }
 
 .featured_projects th {
-    font-size: 150%;
-    font-family: 'Courier New', Courier, monospace;
     border-right: 1px solid black;
     border-top: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
     padding: 2%;
 }
 
@@ -76,24 +76,24 @@ h1 {
 }
 
 .featured_projects td {
-    width: 200px;
-    padding: 1%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1%;
+    width: 200px;
 }
 
 .featured_projects img {
-    width: 200px;
     height: 200px;
+    width: 200px;
 }
 
 .featured_projects a {
-    text-decoration: none;
     color: blue;
+    text-decoration: none;
 }
 
 .featured_projects a img {
-    width: 32px;
     height: 32px;
+    width: 32px;
 }
 
 /* Recent Posts Section */
@@ -103,27 +103,27 @@ h1 {
 }
 
 .recent_posts h1 {
-    font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
 }
 
 .recent_posts table {
+    border-collapse: collapse;
+    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-    border: 1px solid black;
-    border-collapse: collapse;
     width: 50%;
 }
 
 .recent_posts th {
-    font-size: 150%;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
     padding-top: 1%;
 }
 
 .recent_posts td {
-    width: 50%;
-    padding: 1%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1%;
+    width: 50%;
 }

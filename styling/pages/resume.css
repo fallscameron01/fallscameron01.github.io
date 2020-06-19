@@ -1,9 +1,9 @@
 .content object {
-    width: 8in;
-    height: 11in;
     display: block;
+    height: 11in;
     margin-left: auto;
     margin-right: auto;
+    width: 8in;
 }
 
 .download {

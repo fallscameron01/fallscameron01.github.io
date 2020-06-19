@@ -7,8 +7,8 @@
 }
 
 .about_me th {
-    font-size: 200%;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
 }
 
 .about_me td {
@@ -18,8 +18,8 @@
 
 .about_me img {
     float: left;
-    width: 300px;
     height: 400px;
+    width: 300px;
 }
 
 .about_cell {
@@ -27,9 +27,9 @@
 }
 
 .about_text {
-    margin: 1%;
     font-family: sans-serif;
     font-size: 110%;
+    margin: 1%;
 }
 
 /* Skills Section */
@@ -40,16 +40,16 @@
 .skills table {
     border-collapse: collapse;
     border-spacing: 0px;
+    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
     margin-top: 5%;
 }
 
 .skills th {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 200%;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .skills td {
@@ -57,30 +57,30 @@
 }
 
 .skills img {
-    width: 128px;
     height: 128px;
     margin: 10px;
+    width: 128px;
 }
 
 .skills p {
     font-family: sans-serif;
-    text-align: center;
-    margin: 10px;
     font-size: 110%;
+    margin: 10px;
+    text-align: center;
 }
 
 .skills h1 {
     color: navy;
-    font-size: 300%;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
     margin: 10px;
 }
 
 .skills h2 {
     color: salmon;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .menu .menu_aboutme {
