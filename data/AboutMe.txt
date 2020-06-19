@@ -1,1 +1,3 @@
-I am Cameron Falls. I am currently a freshman in Computer Science at Missouri University of Science and Technology.
+I am Cameron Falls. I am currently a sophmore in Computer Science at Missouri University of Science and Technology. I have experience with many programming languages, including C++ and Python. I have taken the classes
+Introduction to Programming, Data Structures, and Discrete Mathematics for Computer Science. I have also participated in extracuriculars that have given me experience in Computer Science. As a member of the Computer Vision
+Team on the Multirotor Robot Design Team, I have developed Computer Vision algorithms to solve physical problems.
