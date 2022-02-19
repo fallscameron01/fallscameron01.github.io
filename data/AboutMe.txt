@@ -1,3 +1,8 @@
-I am Cameron Falls. I am currently a sophmore in Computer Science at Missouri University of Science and Technology. I have experience with many programming languages, including C++ and Python. I have taken the classes
-Introduction to Programming, Data Structures, and Discrete Mathematics for Computer Science. I have also participated in extracuriculars that have given me experience in Computer Science. As a member of the Computer Vision
-Team on the Multirotor Robot Design Team, I have developed Computer Vision algorithms to solve physical problems.
+I am Cameron Falls. I am currently a Junior in Computer Science at Missouri University of Science and Technology.
+I have experience with many programming languages, including C++, Python, and JavaScript.
+Some classes I have taken include Data Structures, Linear Algebra, and Algorithms.
+My technical skills include Git and Linux development.
+I have also participated in extracuriculars that have given me experience in Computer Science.
+As a member of the Computer Vision Team on the Multirotor Design Team, I have developed Computer Vision algorithms to process camera data in order to locate competition objectives.
+I worked as a Computer Vision Team member from August 2019 to August 2020 and August 2021 to present. I was the Computer Vision Team lead for the team from August 2020 to August 2021.
+As the Vision Team Lead, I led and mentored members of the computer vision team in order to achieve competition goals.
