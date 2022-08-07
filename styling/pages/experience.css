@@ -1,0 +1,68 @@
+/* CSS Document - Projects */
+
+.menu .menu_experience {
+    background-color: lightcyan;
+}
+
+.menu .menu_experience:hover {
+    background-color: lightcyan;
+}
+
+.experience table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-left: none;
+    margin-top: 1%;
+}
+
+.experience th {
+    border-left: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 110%;
+    border-left: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience img {
+    height: 300px;
+    width: 300px;
+}
+
+.experience a {
+    color: blue;
+    text-decoration: none;
+}
+
+.experience a img {
+    height: 32px;
+    width: 32px;
+}
+
+.experience h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.experience h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.experience h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.experience ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
