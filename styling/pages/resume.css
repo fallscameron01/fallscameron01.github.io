@@ -26,6 +26,16 @@
     width: min-content;
 }
 
+.content a {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
 .content a:hover {
     background-color: aliceblue;
 }
