@@ -1,0 +1,74 @@
+/* CSS Document - Projects */
+
+.menu .menu_experience {
+    background-color: lightcyan;
+}
+
+.menu .menu_experience:hover {
+    background-color: lightcyan;
+}
+
+.certifications table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-left: none;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.certifications th {
+    border-left: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+    padding: 10px;
+    text-align: left;
+}
+
+.certifications tr {
+    margin-left: 10px;
+}
+
+.certifications td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 110%;
+    border-left: 1px solid black;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.certifications img {
+    height: 300px;
+    width: 300px;
+}
+
+.certifications a {
+    color: blue;
+    text-decoration: none;
+}
+
+.certifications a img {
+    height: 32px;
+    width: 32px;
+}
+
+.certifications h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.certifications h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.certifications h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.certifications ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
