@@ -1,7 +1,9 @@
 I am Cameron Falls. I graduated summa cum laude from Missouri University of Science and Technology with a B.S. Computer Science, as well as a Minor in Mathematics.
-I have experience with many programming languages, including Python, C++, and JavaScript.
+I completed my degree with a 4.0 GPA.
+I have experience with many programming languages, including Python, C++, JavaScript, and SQL.
 Some classes I have taken include Computer Networks, Linear Algebra, Algorithms, and Introduction to Artificial Intelligence.
-My technical skills include Git and Linux development.
+My technical skills include AWS, Git, and Linux development. I obtained the AWS Certified Cloud Practitioner certification in November 2023.
+I currently work as part of the TECDP program at the Cigna Group, in my current role as a Software Engineer. I have worked at Cigna since July 2023.
 I worked in multiple roles as a developer at Ameren. From May 2021 to January 2022, I worked full-time as an App Development Student Co-op at Ameren.
 I continued this role part-time from January 2022 to May 2022. In May 2022, I switched over to work as a full-time Digital Software Intern for the summer.
 I have also participated in extracuriculars that have given me experience in Computer Science.
