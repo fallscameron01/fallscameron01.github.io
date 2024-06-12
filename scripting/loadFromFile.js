@@ -2,7 +2,7 @@
     Loads text from a file.
 */
 
-const MY_URL = "";
+const MY_URL = "https:/cameronfalls.com/";
 
 function loadFromFile(element, filename)
 {
@@ -12,6 +12,7 @@ function loadFromFile(element, filename)
     $(document).ready( function() {
         $(hash).ready( function() {
             $(dot).load(url);
+            console.log(url);
         });
     }); 
 }
