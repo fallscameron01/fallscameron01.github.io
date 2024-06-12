@@ -2,7 +2,7 @@
     Loads text from a file.
 */
 
-const MY_URL = "https:/cameronfalls.com/";
+const MY_URL = "";
 
 function loadFromFile(element, filename)
 {
