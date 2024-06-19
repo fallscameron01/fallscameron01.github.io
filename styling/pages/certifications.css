@@ -28,10 +28,18 @@
     margin-left: 10px;
 }
 
-.certifications td {
+.certifications .cert_text td {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 110%;
     border-left: 1px solid black;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.certifications .cert_badge td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 110%;
     margin-left: 10px;
     padding: 10px;
     text-align: left;
