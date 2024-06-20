@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Domain Name - Cameron Falls</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Cameron Falls webpage">
+        <meta name="keywords" content="Cameron,Falls">
+        <link rel="stylesheet" type="text/css" href="../../styling/general.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/header.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/tail.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/pages/posts.css">
+        <script src="../../scripting/includeHTML.js"></script> <!--includeHTML()-->
+    </head>
+
+    <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
+        <div class="content">
+            <div class="post_head">
+                <h1>Using a Custom Domain Name with GitHub Pages and Squarespace</h1>
+                <p><b>Date Posted:</b> 6/20/2024</p>
+            </div>
+            <div class="post">
+                <p>
+                    For years, I've been hosting my personal website here with GitHub Pages. The domain name, as in the address you type to get here, had been
+                    left as the default &ltusername&gt.github.io, which, while convenient, is not exactly an easy thing for people to remember. It's definitely not
+                    something you can easily speak aloud, either. Plus, it just looked a bit unfinished.
+                </p>
+                <p>
+                    So, I finally decided to register my own domain name. However, instead of remaking the website or attempting to self host it, I wanted to
+                    simply point my domain to this website, hosted on GitHub. The process to do so was actually a lot easier than I thought it would be.
+                </p>
+                <p>
+                    After looking around a bit, I decided to use <a href="https://squarespace.com">Squarespace</a> for purchasing my domain, as it seemed to be a fairly
+                    straightforward process. I simply had to decide on my domain name, <a href="https://cameronfalls.com">cameronfalls.com</a>, and then purchase it.
+                    After that, I'm left with a blank website at my domain. Next, I had to point it to my GitHub Pages site, where my website actually lives.
+                </p>
+                <p>
+                    GitHub provides <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">fairly in-depth instructions</a>
+                    for using a custom domain with your GitHub Pages repo, but I'll briefly overview it here. First, I had to tell GitHub to expect the page to be hosted
+                    at my custom domain. This is as simple as putting my domain name in the "Custom Domain" field under the repo's "Pages" settings section. Now, GitHub
+                    will look to see if the DNS is properly configured, which at this point it wasn't.
+                </p>
+                <p>
+                    To configure the DNS resolution correctly, I needed to input some DNS records for my domain back on Squarespace. This was straightforward, as all
+                    needed to do was create 4 "A" records (for IPv4), 4 "AAAA" records (for IPv6), and a "CNAME" record. The A and AAAA records essentially resolve the IP address
+                    of the domain to GitHub's IP addresses. These addresses can be found in
+                    <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">GitHub's documentation</a>.
+                    The CNAME record is used for redirecting "www" prepended addresses to simply "cameronfalls.com".
+                </p>
+                <p>
+                    Once the DNS records were created with Squarespace, it took a bit of time for the records to populate. After they did though, GitHub detected that
+                    the DNS was configured properly and began serving my GitHub pages site on my custom domain. A few links needed to be updated to use my new domain
+                    around the site, but, after that, my website looked just as it did before, now with a custom domain!
+                </p>
+            </div>
+        </div>
+
+        <!--Tail-->
+        <div include-html="/pages/elements/tail.html"></div>
+
+        <script>includeHTML();</script>
+    </body>
+</html>
