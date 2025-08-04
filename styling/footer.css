@@ -1,7 +1,7 @@
-/* CSS Document - Tail */
+/* CSS Document - Footer */
 
-/* Tail */
-.tail {
+/* Footer */
+.footer {
     background-color: lightskyblue;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -9,7 +9,7 @@
     margin-top: 5%;
 }
 
-.tail a {
+.footer a {
     background-color: lightblue;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
@@ -25,12 +25,12 @@
     width: max-content;
 }
 
-.tail p {
+.footer p {
     margin-bottom: 0%;
     padding-bottom: 1%;
     text-align: center;
 }
 
-.tail a:hover {
+.footer a:hover {
     background-color: aliceblue;
 }
