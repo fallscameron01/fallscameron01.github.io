@@ -1,11 +1,5 @@
 /* Header Styling */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -13,11 +7,6 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: white;
-    min-height: 100vh;
 }
 
 .header-container {
