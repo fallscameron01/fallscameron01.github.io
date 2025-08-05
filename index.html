@@ -3,6 +3,7 @@
     <head>
         <title>Cameron Falls - Home</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Cameron Falls webpage">
         <meta name="keywords" content="Cameron,Falls">
         <link rel="stylesheet" type="text/css" href="styling/general.css">
@@ -19,139 +20,143 @@
         <div include-html="/pages/elements/header.html"></div>
 
         <!--Main Content-->
-        <div class="content">
-            <!--About Me-->
-            <div class="about_me">
-                <table>
-                    <tr>
-                        <th></th> <!--Empty-->
-                        <th>About Me</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="data/images/Cameron.jpg" alt="Cameron Falls">
-                        </td>
-                        <td class="about_cell">
-                            <div class="about_text">
-                                <script>$(document).ready(loadFromFile("about_text", "data/AboutMe.txt"));</script>
+        <main class="main-content">
+            <div class="container">
+                <!-- About Me/Intro Section -->
+                <section class="intro-section">
+                    <div class="profile-image">
+                        <img src="data/images/Cameron.jpg" alt="Cameron Falls Profile Picture">
+                    </div>
+                    <div class="intro-text">
+                        <h2>Hello, I'm Cameron</h2>
+                        <p class="subtitle">Software Developer & Problem Solver</p>
+                        <p>Welcome to my portfolio! I'm a passionate developer with expertise and experience in many programming languages, libraries, and technologies. Some of these are Python, NumPy, and AWS.</p>
+                        <p>I'm currently a TECDP Lead Analyst - Application Developer at The Cigna Group. I graduated summa cum laude from Missouri University of Science and Technology with a B.S. Computer Science, as well as a Minor in Mathematics. I have a strong foundation in modern technologies and a commitment to continuous learning.</p>
+                    </div>
+                </section>
+
+                <!-- Featured Projects Section -->
+                <section class="projects-section">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image"><img src="https://avatars2.githubusercontent.com/u/17713156?s=200&v=4" alt="Missouri MRR"></div>
+                            <div class="project-content">
+                                <h3>Multirotor Design Team</h3>
+                                <p>As a member of the Computer Vision team on the Missouri S&T Multirotor Robot Design Team, I have developed Computer Vision algorithms as solutions to complex problems.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">PyTesseract</span>
+                                    <span class="tech-tag">Git</span>
+                                </div>
+                                <a href="https://github.com/MissouriMRR/IARC-2020" class="project-link">View Project →</a>
                             </div>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image"><img src="data/posts/Q-Learning_CartPole/CartPole.png" alt="Cart Pole"></div>
+                            <div class="project-content">
+                                <h3>Q-Learning Cart Pole</h3>
+                                <p>A solution to the Cart Pole problem in the Python OpenAI Gym Library. Uses Q-Learning to create a model to balance a pole on a cart.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">OpenAI Gym</span>
+                                    <span class="tech-tag">Q-Learning</span>
+                                </div>
+                                <a href="https://github.com/fallscameron01/Q-Learning_CartPole" class="project-link">View Project →</a>
+                                <a href="pages/posts/Q-Learning_CartPole.html" class="project-link">View Post →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image"><img src="data/posts/Plot_Q-Learning/RewardPlot.png"></div>
+                            <div class="project-content">
+                                <h3>Plotting Q-Learning</h3>
+                                <p>A tool for plotting and visualizing data from Q-Learning projects using the Python Pandas Library.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">Q-Learning</span>
+                                </div>
+                                <a href="https://github.com/fallscameron01/Plot_Q-Learning" class="project-link">View Project →</a>
+                                <a href="pages/posts/Plot_Q-Learning.html" class="project-link">View Post →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image"><img src="data/projects/Chroma_Key/green_screen.png" alt="Green Screen"></div>
+                            <div class="project-content">
+                                <h3>Chroma Key</h3>
+                                <p>A tool that applies a background to all images in a directory. This tool is used for applying backgrounds to "green screens."</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                </div>
+                                <a href="https://github.com/fallscameron01/Chroma_Key" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image"><img src="data/projects/Monte_Carlo_Simulation/Die.png" alt="Craps Die"></div>
+                            <div class="project-content">
+                                <h3>Monte Carlo Simulation</h3>
+                                <p>A simulation of the game Craps to find the odds of winning through a brute force method.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NumPy</span>
+                                </div>
+                                <a href="https://github.com/fallscameron01/Monte_Carlo_Simulation" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image"><img src="data/projects/List_Manager/List.png"></div>
+                            <div class="project-content">
+                                <h3>List Manager</h3>
+                                <p>A console-based list-making program to help you manage your tasks.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">C++</span>
+                                </div>
+                                <a href="https://github.com/fallscameron01/List_Manager" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Posts Section -->
+                <section class="posts-section">
+                    <h2 class="section-title">Recent Posts</h2>
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-date">June 20, 2024</div>
+                            <h3>Using a Custom Domain Name with GitHub Pages and Squarespace</h3>
+                            <p>For years, I've been hosting my personal website here with GitHub Pages. The domain name, as in the address you type to get here, had been left as the default fallscameron01.github.io, which, while convenient, is not exactly an easy thing for people to remember. It's definitely not something you can easily speak aloud, either. Plus, it just looked a bit unfinished. So, I finally decided to register my own domain name...</p>
+                            <a href="pages/posts/Custom_Domain.html" class="read-more">Read More →</a>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-date">June 16, 2020</div>
+                            <h3>Plotting Q-Learning</h3>
+                            <p>Following my project in the Q-Learning Cart Pole problem, I decided to create an easier way to visualize the Q-Learning process. For this project, the goal was to easily create graphs to display the results and progression from Q-Learning. Using pandas and matplotlib, I created a Python class that makes it easy to save and plot this data...</p>
+                            <a href="pages/posts/Plot_Q-Learning.html" class="read-more">Read More →</a>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-date">June 11, 2020</div>
+                            <h3>Q-Learning Cart Pole</h3>
+                            <p>The goal of this project was to solve the Cart Pole problem from the Python OpenAI Gym library. The goal of the Cart Pole problem is to balance a pole on a cart that runs on a frictionless rail. The cart can only be affected by a push left (action 0) or a push right (action 1)...</p>
+                            <a href="pages/posts/Q-Learning_CartPole.html" class="read-more">Read More →</a>
+                        </article>
+                    </div>
+                </section>
             </div>
+        </main>
 
-            <div class="featured_projects">
-                <h1>Featured Projects</h1>
-                <table>
-                    <tr>
-                        <th colspan="2">Multirotor Robot Design Team</th>
-                        <th colspan="2">Q-Learning Cart Pole</th>
-                        <th colspan="2">Plotting Q-Learning</th>
-                    </tr>
-                    <tr>
-                        <td><img src="https://avatars2.githubusercontent.com/u/17713156?s=200&v=4" alt="Missouri MRR"></td>
-                        <td class="featured_projects_text">
-                            <p>As a member of the Computer Vision team on the Missouri S&T Multirotor Robot Design Team, I have developed Computer Vision algorithms as solutions to complex problems.</p>
-                            <a href="https://github.com/MissouriMRR/IARC-2020"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                        </td>
-
-                        <td><img src="data/posts/Q-Learning_CartPole/CartPole.png" alt="Cart Pole"></td>
-                        <td class="featured_projects_text">
-                            <p>A solution to the Cart Pole problem in the Python OpenAI Gym Library. Uses Q-Learning to create a model to balance a pole on a cart.</p>
-                            <a href="https://github.com/fallscameron01/Q-Learning_CartPole"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                            <p><a href="pages/posts/Q-Learning_CartPole.html">View Post</a></p>
-                        </td>
-
-                        <td><img src="data/posts/Plot_Q-Learning/RewardPlot.png"></td>
-                        <td class="featured_projects_text">
-                            <p>A tool for plotting and visualizing data from Q-Learning projects using the Python Pandas Library.</p>
-                            <a href="https://github.com/fallscameron01/Plot_Q-Learning"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                            <p><a href="pages/posts/Plot_Q-Learning.html">View Post</a></p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Chroma Key</th>
-                        <th colspan="2">Monte Carlo Simulation</th>
-                        <th colspan="2">List Manager</th>
-                    </tr>
-
-                    <tr>
-                        <td><img src="data/projects/Chroma_Key/green_screen.png" alt="Green Screen"></td>
-                        <td class="featured_projects_text">
-                            <p>A tool that applies a background to all images in a directory. This tool is used for applying backgrounds to "green screens."</p>
-                            <a href="https://github.com/fallscameron01/Chroma_Key"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                        </td>
-
-                        <td><img src="data/projects/Monte_Carlo_Simulation/Die.png" alt="Craps Die"></td>
-                        <td class="featured_projects_text">
-                            <p>A simulation of the game Craps to find the odds of winning through a brute force method.</p>
-                            <a href="https://github.com/fallscameron01/Monte_Carlo_Simulation"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                        </td>
-
-                        <td><img src="data/projects/List_Manager/List.png" alt="To do list"></td>
-                        <td class="featured_projects_text">
-                            <p>A console-based list-making program to help you manage your tasks.</p>
-                            <a href="https://github.com/fallscameron01/List_Manager"><img src="data/images/GitHub-Mark-32px.png" alt="View on GitHub"></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="recent_posts">
-                <h1>Recent Posts</h1>
-                <table>
-                    <tr>
-                        <th>Using a Custom Domain Name with GitHub Pages and Squarespace</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><b>Posted:</b> 6/20/2024</p>
-                            <p>
-                                For years, I've been hosting my personal website here with GitHub Pages. The domain name, as in the address you type to get here, had been
-                                left as the default fallscameron01.github.io, which, while convenient, is not exactly an easy thing for people to remember. It's definitely not
-                                something you can easily speak aloud, either. Plus, it just looked a bit unfinished. So, I finally decided to register my own domain name...
-                            </p>
-                            <a href="pages/posts/Custom_Domain.html">Read More</a>
-                        </td>
-                    </tr>
-                </table>
-                
-                <table>
-                    <tr>
-                        <th>Plotting Q-Learning</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><b>Posted:</b> 6/16/2020</p>
-                            <p>
-                                Following my project in the <a href="pages/posts/Q-Learning_CartPole.html">Q-Learning Cart Pole problem</a>, I decided to create an easier way to visualize the Q-Learning
-                                process. For this project, the goal was to easily create graphs to display the results and progression from Q-Learning. Using pandas and matplotlib, I created
-                                a Python class that makes it easy to save and plot this data...
-                            </p>
-                            <a href="pages/posts/Plot_Q-Learning.html">Read More</a>
-                        </td>
-                    </tr>
-                </table>
-                
-                <table>
-                    <tr>
-                        <th>Q-Learning Cart Pole</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><b>Posted:</b> 6/11/2020</p>
-                            <p>
-                                The goal of this project was to solve the Cart Pole problem from the Python OpenAI Gym library. The goal of the Cart Pole problem is to balance a pole on a
-                                cart that runs on a frictionless rail. The cart can only be affected by a push left (action 0) or a push right (action 1)...
-                            </p>
-                            <a href="pages/posts/Q-Learning_CartPole.html">Read More</a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        
         <!--Footer-->
         <div include-html="/pages/elements/footer.html"></div>
 
