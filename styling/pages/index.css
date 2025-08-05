@@ -147,15 +147,40 @@
     font-weight: 500;
 }
 
-.project-link {
-    color: #4a90e2;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+.project-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.project-link:hover {
-    color: #2c5aa0;
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.github-link {
+    background: #333;
+    color: white;
+}
+
+.github-link:hover {
+    background: #24292e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.github-icon {
+    filter: brightness(0) invert(1);
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 /* Recent Posts Section */
@@ -238,5 +263,13 @@
     .projects-section,
     .posts-section {
         padding: 40px 20px;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        justify-content: center;
     }
 }
