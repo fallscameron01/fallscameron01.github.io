@@ -13,3 +13,9 @@ body {
     background: white;
     min-height: 100vh;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
