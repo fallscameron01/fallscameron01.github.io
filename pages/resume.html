@@ -17,13 +17,28 @@
         <div include-html="/pages/elements/header.html"></div>
         
         <!--Main Content-->
-        <div class="content">
-            <object data="https://cameronfalls.com/data/resume/Cameron_Falls_Resume_04_2025.pdf" type="application/pdf">Unable to Load File, Download Below</object>
-            <div class="download">
-                <a href="https://cameronfalls.com/data/resume/Cameron_Falls_Resume_04_2025.pdf">Download</a>
+        <main class="main-content">
+            <div class="container">
+                <section class="page-header">
+                    <h1 class="page-title">My Resume</h1>
+                    <p class="page-subtitle">Last Updated April 2025</p>
+                    <div class="resume-controls">
+                        <a href="https://cameronfalls.com/data/resume/Cameron_Falls_Resume_04_2025.pdf" download="Cameron_Falls_Resume_04_2025.pdf" class="download-button">
+                            📄 Download PDF
+                        </a>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <div class="resume-viewer">
+                        <iframe 
+                            src="https://cameronfalls.com/data/resume/Cameron_Falls_Resume_04_2025.pdf" 
+                            class="resume-iframe"
+                            title="Cameron Falls Resume">
+                        </iframe>
+                </section>
             </div>
-            <p>Updated in April 2025</p>
-        </div>
+        </main>
 
         <!--Footer-->
         <div include-html="/pages/elements/footer.html"></div>
