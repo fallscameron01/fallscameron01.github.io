@@ -97,7 +97,7 @@
     transform: translateY(-2px);
 }
 
-.header-nav-bar a.header-nav-active {
+.header-nav-bar {
     background: linear-gradient(135deg, #4a90e2, #2c5aa0);
     color: white;
 }

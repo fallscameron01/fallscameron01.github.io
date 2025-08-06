@@ -8,6 +8,11 @@
     min-height: calc(100vh - 200px);
 }
 
+a.header-nav-resume {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
+}
+
 /* Page Header */
 .page-header {
     padding: 60px 40px 40px;

@@ -8,6 +8,11 @@
     overflow: visible;
 }
 
+a.header-nav-index {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
+}
+
 /* About Me/Intro Section */
 .intro-section {
     padding: 60px 40px;
