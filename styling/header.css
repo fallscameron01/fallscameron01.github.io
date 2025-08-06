@@ -97,11 +97,6 @@
     transform: translateY(-2px);
 }
 
-.header-nav-bar {
-    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
-    color: white;
-}
-
 /* Responsive Styles for Small Screens */
 
 @media (max-width: 768px) {

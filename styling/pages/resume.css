@@ -8,7 +8,7 @@
     min-height: calc(100vh - 200px);
 }
 
-a.header-nav-resume {
+.header-nav-bar a.header-nav-resume {
     background: linear-gradient(135deg, #4a90e2, #2c5aa0);
     color: white;
 }
@@ -81,4 +81,29 @@ a.header-nav-resume {
     min-height: 600px;
     border: none;
     border-radius: 10px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 20px 30px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .resume-section {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .resume-iframe {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .download-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }

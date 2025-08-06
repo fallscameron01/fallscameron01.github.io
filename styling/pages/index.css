@@ -8,7 +8,7 @@
     overflow: visible;
 }
 
-a.header-nav-index {
+.header-nav-bar a.header-nav-index {
     background: linear-gradient(135deg, #4a90e2, #2c5aa0);
     color: white;
 }
