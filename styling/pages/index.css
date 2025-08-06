@@ -183,6 +183,17 @@
     flex-shrink: 0;
 }
 
+.blog-link {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
+}
+
+.blog-link:hover {
+    background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
 /* Recent Posts Section */
 
 .posts-section {
