@@ -217,7 +217,7 @@
     background: rgba(74, 144, 226, 0.2);
 }
 
-/* Responsive Design */
+/* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
     .certifications-section {
         padding: 40px 20px;
