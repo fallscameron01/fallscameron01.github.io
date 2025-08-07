@@ -1,13 +1,4 @@
-/* CSS Document - index */
-
-.main-content {
-    background: white;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-}
-
+/* Main Content */
 .header-nav-bar a.header-nav-index {
     background: linear-gradient(135deg, #4a90e2, #2c5aa0);
     color: white;
@@ -150,6 +141,7 @@
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+    border: 1px solid rgba(74, 144, 226, 0.2);
 }
 
 .project-links {

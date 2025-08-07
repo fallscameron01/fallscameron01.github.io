@@ -1,4 +1,4 @@
-/* CSS Document - General Styling */
+/* General Styling */
 
 * {
     margin: 0;
@@ -14,8 +14,51 @@ body {
     min-height: 100vh;
 }
 
+/* Main Content of a Page */
+.main-content {
+    background: white;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+/* Subdivision for Layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Page Header */
+.page-header {
+    padding: 60px 40px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(44, 90, 160, 0.1));
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 20px 30px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+    }
 }
