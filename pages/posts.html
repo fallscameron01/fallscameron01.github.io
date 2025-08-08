@@ -17,64 +17,90 @@
         <div include-html="/pages/elements/header.html"></div>
 
         <!--Main Content-->
-        <div class="content">
-            <div class="post_links">
-                <table>
-                    <tr>
-                        <th colspan="2">Using a Custom Domain Name with GitHub Pages and Squarespace</th>
-                    </tr>
-                    <tr>
-                        <td><img src="../data/posts/Custom_Domain/Squarespace_Logo.png" alt="Squarespace Logo"></td>
-                        <td>
-                            <p><b>Posted:</b> 6/20/2024</p>
-                            <p>
-                                For years, I've been hosting my personal website here with GitHub Pages. The domain name, as in the address you type to get here, had been
-                                left as the default fallscameron01.github.io, which, while convenient, is not exactly an easy thing for people to remember. It's definitely not
-                                something you can easily speak aloud, either. Plus, it just looked a bit unfinished. So, I finally decided to register my own domain name...
-                            </p>
-                            <a href="posts/Custom_Domain.html">Read More</a><br>
-                            <a href="https://github.com/fallscameron01/fallscameron01.github.io"><img src="../data/images/GitHub-Mark-32px.png" alt="GitHub"></a>
-                        </td>
-                    </tr>
-                </table>
-                
-                <table>
-                    <tr>
-                        <th colspan="2">Plotting Q-Learning</th>
-                    </tr>
-                    <tr>
-                        <td><img src="../data/posts/Plot_Q-Learning/RewardPlot.png" alt="Episode-Reward Line Graph"></td>
-                        <td>
-                            <p><b>Date Posted:</b> 6/16/2020</p>
-                            <p>
-                                Following my project in the <a href="posts/Q-Learning_CartPole.html">Q-Learning Cart Pole problem</a>, I decided to create an easier way to visualize the Q-Learning
-                                process. For this project, the goal was to easily create graphs to display the results and progression from Q-Learning. Using pandas and matplotlib, I created
-                                a Python class that makes it easy to save and plot this data...
-                            </p>
-                            <a href="posts/Plot_Q-Learning.html">Read More</a><br>
-                            <a href="https://github.com/fallscameron01/Plot_Q-Learning"><img src="../data/images/GitHub-Mark-32px.png" alt="GitHub"></a>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <th colspan="2">Q-Learning Cart Pole</th>
-                    </tr>
-                    <tr>
-                        <td><img src="../data/posts/Q-Learning_CartPole/CartPole.png" alt="Cart Pole"></td>
-                        <td>
-                            <p><b>Date Posted:</b> 6/11/2020</p>
-                            <p>
-                                The goal of this project was to solve the Cart Pole problem from the Python OpenAI Gym library. The goal of the Cart Pole problem is to balance a pole on a
-                                cart that runs on a frictionless rail. The cart can only be affected by a push left (action 0) or a push right (action 1)...
-                            </p>
-                            <a href="posts/Q-Learning_CartPole.html">Read More</a><br>
-                            <a href="https://github.com/fallscameron01/Q-Learning_CartPole"><img src="../data/images/GitHub-Mark-32px.png" alt="GitHub"></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+        <main class="main-content">
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Posts</h1>
+                    <p class="page-subtitle">Thoughts, insights, and learnings from my journey in software development and technology.</p>
+                </div>
+            </section>
+
+            <section class="posts-section">
+                <div class="container">
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="../data/posts/Custom_Domain/Squarespace_Logo.png" alt="Using a Custom Domain Name with GitHub Pages and Squarespace">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">June 20, 2024</div>
+                                <h2 class="post-title">Using a Custom Domain Name with GitHub Pages and Squarespace</h2>
+                                <div class="post-tags">
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">DNS</span>
+                                </div>
+                                <p class="post-excerpt">For years, I've been hosting my personal website here with GitHub Pages. The domain name, as in the address you type to get here, had been left as the default fallscameron01.github.io, which, while convenient, is not exactly an easy thing for people to remember. It's definitely not something you can easily speak aloud, either. Plus, it just looked a bit unfinished. So, I finally decided to register my own domain name...</p>
+                                <div class="post-actions">
+                                    <a href="https://cameronfalls.com/pages/posts/Custom_Domain.html" class="read-more">Read More →</a>
+                                    <a href="https://github.com/fallscameron01/fallscameron01.github.io" class="github-button">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.15.0/github.svg" alt="GitHub" class="github-logo">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="../data/posts/Plot_Q-Learning/RewardPlot.png" alt="Building Scalable Applications">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">June 16, 2020</div>
+                                <h2 class="post-title">Plotting Q-Learning</h2>
+                                <div class="post-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">Matplotlib</span>
+                                    <span class="tag">NumPy</span>
+                                    <span class="tag">Q-Learning</span>
+                                </div>
+                                <p class="post-excerpt">Following my project in the Q-Learning Cart Pole problem, I decided to create an easier way to visualize the Q-Learning process. For this project, the goal was to easily create graphs to display the results and progression from Q-Learning. Using pandas and matplotlib, I created a Python class that makes it easy to save and plot this data...</p>
+                                <div class="post-actions">
+                                    <a href="https://cameronfalls.com/pages/posts/Plot_Q-Learning.html" class="read-more">Read More →</a>
+                                    <a href="https://github.com/fallscameron01/Plot_Q-Learning" class="github-button">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.15.0/github.svg" alt="GitHub" class="github-logo">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="../data/posts/Plot_Q-Learning/RewardPlot.png" alt="Building Scalable Applications">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-date">June 11, 2020</div>
+                                <h2 class="post-title">Q-Learning Cart Pole</h2>
+                                <div class="post-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">OpenAI Gym</span>
+                                    <span class="tag">Q-Learning</span>
+                                </div>
+                                <p class="post-excerpt">The goal of this project was to solve the Cart Pole problem from the Python OpenAI Gym library. The goal of the Cart Pole problem is to balance a pole on a cart that runs on a frictionless rail. The cart can only be affected by a push left (action 0) or a push right (action 1)...</p>
+                                <div class="post-actions">
+                                    <a href="https://cameronfalls.com/pages/posts/Q-Learning_CartPole.html" class="read-more">Read More →</a>
+                                    <a href="https://github.com/fallscameron01/Q-Learning_CartPole" class="github-button">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.15.0/github.svg" alt="GitHub" class="github-logo">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!--Footer-->
         <div include-html="/pages/elements/footer.html"></div>
