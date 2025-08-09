@@ -1,58 +1,165 @@
-/* CSS Document - Projects */
-
-.menu .menu_projects {
-    background-color: lightcyan;
+/* Main Content */
+.header-nav-bar a.header-nav-projects {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
 }
 
-.menu .menu_projects:hover {
-    background-color: lightcyan;
+/* Projects Section */
+.projects-section {
+    padding: 60px 40px;
 }
 
-.projects table {
-    border-collapse: collapse;
-    border-spacing: 0px;
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.projects th {
-    border: 1px solid black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 200%;
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 250px;
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
     padding: 10px;
 }
 
-.projects td {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 110%;
-    padding: 10px;
-    text-align: center;
-    width: 500px;
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.projects img {
-    height: 300px;
-    width: 300px;
+.project-content {
+    padding: 30px;
 }
 
-.projects a {
-    color: blue;
+.project-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700;
+}
+
+.project-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background: rgba(74, 144, 226, 0.1);
+    color: #4a90e2;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
-.projects a img {
-    height: 32px;
-    width: 32px;
+.github-link {
+    background: #333;
+    color: white;
 }
 
-.projects h3 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+.github-link:hover {
+    background: #24292e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.projects ul {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: left;
+.blog-link {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
+}
+
+.blog-link:hover {
+    background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.site-link {
+    background: #10b981;
+    color: white;
+}
+
+.site-link:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+}
+
+.github-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 40px 20px;
+    }
+
+    .projects-grid {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        justify-content: center;
+    }
 }
