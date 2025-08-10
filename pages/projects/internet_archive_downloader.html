@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internet Archive Downloader - Cameron Falls</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Cameron Falls webpage">
+        <meta name="keywords" content="Cameron,Falls">
+        <link rel="stylesheet" type="text/css" href="../../styling/general.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/header.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/footer.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/pages/projects.css">
+        <script src="../../scripting/includeHTML.js"></script> <!--includeHTML()-->
+    </head>
+
+    <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
+        <main class="main-content">
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Internet Archive Downloader</h1>
+                    <p class="page-subtitle">Python utility for downloading files from an archive on the Internet Archive. Uses the <code>internetarchive</code> package for downloading files. Utilizes multiprocessing to download multiple files simultaneously and speed up the download of archives with a large number of files.</p>
+                </div>
+                <br>
+                <div class="project-actions">
+                    <a href="https://github.com/fallscameron01/Internet_Archive_Downloader" class="github-button">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.15.0/github.svg" alt="GitHub" class="github-logo">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+            
+            <section class="projects-section">
+                <div class="container project-page">
+                    <h2>Details</h2>
+                    <p>
+                        An archive download requires specifying the identifier of the archive. The identifier tag can be found on the archive's details page. Additionally, a glob string may be specified to filter which items to download from an archive. The user must specify a location for the download to be output on disk.
+                    </p>
+                    <p>
+                        The <code>ArchiveDownloader</code> class speeds up the downloading of an archive with a large number of files by splitting the files to download among simultaneous processes. This allows multiple files to be downloaded at the same time, increasing the total bandwidth available. By default, the <code>ArchiveDownloader</code> class will use 4 processes, but this number can be increased or decreased by specifying the <code>process_num</code> parameter.
+                    </p>
+
+                    <h2>Usage</h2>
+                    <p>
+                        Can be used by either running <code>archive_downloader.py</code> with required arguments or by importing the ArchiveDownloader class into your own program.
+                    </p>
+
+                    <h3>Class Usage</h3>
+                    <p>
+                        To use the class in your own code, simply <code>from archive_downloader import ArchiveDownloader</code> and initialize an instance of the class with the desired parameters. Call the function <code>download_archive()</code> to initiate the download task. Use the `set_param()` function to change the parameters before another download task.
+                    </p>
+
+                    <h3>Command Line Usage</h3>
+                    <h4>Command Line Arguments</h4>
+                    <pre>
+                        <code>
+                            -i, --identifier
+                                type=str
+                                Required
+                                Identifier of archive item to download from.
+                        </code>
+                        <code>
+                            -o, --output_loc
+                                type=str
+                                Required
+                                Output location to download items to.
+                        </code>
+                        <code>
+                            -g, --glob_str
+                                type=str
+                                Default: None
+                                Glob string to filter items within archive for download.
+                        </code>
+                        <code>
+                            -p, --process_num
+                                type=int
+                                Default: 4
+                                Number of simultaneous download processes to run.
+                        </code>
+                    </pre>
+                    
+                    <h4>Example Command Line Usage</h4>
+                    <p>
+                        The command <code>python archive_downloader.py -i example_archive_item -o C:\My_Output_Folder -g "*.jpg" -p 16</code> will download jpg files from "example_archive_item" to the folder "C:\My_Output_Folder" using 16 processes.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <div include-html="/pages/elements/footer.html"></div>
+
+        <script>includeHTML();</script>
+    </body>
+</html>
