@@ -1,92 +1,295 @@
-/* CSS Document - about_me */
+/* Main Content */
+.header-nav-bar a.header-nav-about_me {
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    color: white;
+}
 
 /* About Me Section */
-.about_me table {
-    margin-left: auto;
-    margin-right: auto;
+.about-section {
+    padding: 60px 40px;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(44, 90, 160, 0.1));
 }
 
-.about_me th {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 200%;
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.about_me td {
-    border-collapse: collapse;
-    border-spacing: 0px;
+.headshot-container {
+    flex: 0 0 300px;
+    text-align: center;
 }
 
-.about_me img {
-    float: left;
-    height: 400px;
+.headshot-container img {
     width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(74, 144, 226, 0.3);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.about_cell {
-    border: 1px solid black;
+.headshot-container img:hover {
+    transform: scale(1.05);
 }
 
-.about_text {
-    font-family: sans-serif;
-    font-size: 110%;
-    margin: 1%;
+.about-text {
+    flex: 1;
+    min-width: 400px;
 }
 
-/* Skills Section */
-.skills {
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.about-text .subtitle {
+    font-size: 1.4rem;
+    color: #4a90e2;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Skills Sections */
+.skills-container {
+    padding: 60px 40px;
+}
+
+.skills-section {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.skills-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 700;
     text-align: center;
 }
 
-.skills table {
-    border-collapse: collapse;
-    border-spacing: 0px;
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.skills th {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 200%;
-    padding: 10px;
+.skill-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
 }
 
-.skills td {
-    border: 1px solid black;
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.skills img {
-    height: 128px;
-    margin: 10px;
-    width: 128px;
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.skills p {
-    font-family: sans-serif;
-    font-size: 110%;
-    margin: 10px;
-    text-align: center;
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
-.skills h1 {
-    color: navy;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 300%;
-    margin: 10px;
+.skill-icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
-.skills h2 {
-    color: salmon;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 0px;
-    margin-top: 0px;
+.skill-info {
+    flex: 1;
 }
 
-.menu .menu_aboutme {
-    background-color: lightcyan;
+.skill-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.menu .menu_aboutme:hover {
-    background-color: lightcyan;
+.skill-level {
+    font-size: 1rem;
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.skill-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Programming Languages Section */
+.programming-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 60px;
+}
+
+/* Technical Skills Section */
+.technical-section {
+    padding-top: 0;
+}
+
+.technical-skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-category {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.tech-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.tech-icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.tech-info {
+    flex: 1;
+}
+
+.tech-category h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.tech-level {
+    font-size: 1rem;
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.tech-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .headshot-container {
+        flex: none;
+    }
+
+    .headshot-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-text {
+        min-width: auto;
+    }
+
+    .about-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-section,
+    .skills-container {
+        padding: 40px 20px;
+    }
+
+    .skills-grid,
+    .technical-skills-grid {
+        gap: 25px;
+    }
+
+    .skill-header,
+    .tech-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .skill-info,
+    .tech-info {
+        text-align: center;
+    }
 }

@@ -19,163 +19,220 @@
         <div include-html="/pages/elements/header.html"></div>
 
         <!--Main Content-->
-        <div class="content">
-            
-            <!--About Me-->
-            <div class="about_me">
-                <table>
-                    <tr>
-                        <th></th> <!--Empty-->
-                        <th>About Me</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/Cameron.jpg" alt="Cameron Falls">
-                        </td>
-                        <td class="about_cell">
-                            <div class="about_text">
-                                <script>$(document).ready(loadFromFile("about_text", "data/AboutMe.txt"));</script>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            
-            <!--Skills-->
-            <div class="skills">
-                <table id="Programming_Languages">
-                    <tr>
-                        <th colspan="2">Programming Languages and Libraries</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/python_logo.png" alt="Python Logo">
-                        </td>
-                        <td>
-                            <h1>Python</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I have used <b>Python</b> for many personal, organizational, and professionsal projects. I utilized Python in my position as an App Development Student Co-op at Ameren for various automation tasks like generating PDF documents and updating databases. Additionally, in my role as a TECDP Senior Analyst at The Cigna Group, I used Python for creating scripts to automate repetitive tasks, including programmatically accessing APIs and tabulating data. As a member of Multirotor Design Team, I used Python for <b>Computer Vision</b> tasks, such as object identification with drones. In addition, I have used Python for projects in classes including <b>Introduction to Artificial Intelligence</b> and <b>Game Theory for Computer Science</b>.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/C++_Logo.png" alt="C++ Logo">
-                        </td>
-                        <td>
-                            <h1>C++</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I have used <b>C++</b> in many classes for various projects, as well as for personal projects. Classes taken include <b>Data Structures</b> and <b>Introduction to Operating Systems</b>.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/numpy_logo.png" alt="NumPy Logo">
-                        </td>
-                        <td>
-                            <h1>NumPy</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I frequently use the NumPy Python library in my projects, as it makes array calculations more efficient and quicker when compared to standard Python.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/OpenCV_logo.png" alt="OpenCV Logo">
-                        </td>
-                        <td>
-                            <h1>OpenCV</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I've used the OpenCV Python library in my capacity working on <b>computer vision</b> tasks as part of the Multirotor Design Team.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/sql_logo.png" alt="SQL Logo">
-                        </td>
-                        <td>
-                            <h1>SQL</h1>
-                            <h2>Knowledgeable and Experienced</h2>
-                            <p>I have used SQL in professionsal roles with Ameren and The Cigna Group to access and work with databases. I have experience creating <b>Oracle SQL databases</b>, as well as working with various other kinds of SQL databases such as <b>Microsoft SQL Server</b>.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/JavaScript_logo.png" alt="JavaScript Logo">
-                        </td>
-                        <td>
-                            <h1>JavaScript</h1>
-                            <h2>Knowledgeable and Experienced</h2>
-                            <p>I have learned <b>JavaScript</b> through self-research and industry work experience. In my role as an App Development Student Co-op at Ameren, I utilized Javascript to develop several <b>Web Application Widgets</b>.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/Java_logo.png" alt="Java Logo">
-                        </td>
-                        <td>
-                            <h1>Java</h1>
-                            <h2>Knowledgeable</h2>
-                            <p>I have learned <b>Java</b> through a high school course and self-research. I have used Java for projects in that course and gained knowledge of the language through personal testing.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- <img src="../data/images/Java_logo.png" alt="Java Logo"> -->
-                        </td>
-                        <td>
-                            <h1>Boto3</h1>
-                            <h2>Knowledgeable</h2>
-                            <p>I have used the Boto3 Python library to work with <b>AWS resources</b>, including <b>DynamoDB</b>, <b>Glue</b>, and <b>S3</b>, in my role as a TECDP Senior Analyst at Cigna.</p>
-                        </td>
-                    </tr>
-                </table>
+        <main class="main-content">
+            <!-- About Me Section -->
+            <section class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="headshot-container">
+                            <img src="../data/images/Cameron.jpg" alt="Cameron Falls Headshot">
+                        </div>
+                        <div class="about-text">
+                            <h2>About Me</h2>
+                            <p class="subtitle">Software Developer & Problem Solver</p>
+                            <p>I am Cameron Falls. I graduated summa cum laude from Missouri University of Science and Technology with a B.S. Computer Science, as well as a Minor in Mathematics. I completed my degree with a 4.0 GPA. I have experience with many programming languages, including Python, C++, JavaScript, and SQL. Some classes I have taken include Computer Networks, Linear Algebra, Algorithms, and Introduction to Artificial Intelligence. My technical skills include AWS, Git, and Linux development. I obtained the AWS Certified Cloud Practitioner certification in November 2023. I currently work as part of the TECDP program at the Cigna Group, in my current role as a Software Engineer. I have worked at Cigna since July 2023. I worked in multiple roles as a developer at Ameren. From May 2021 to January 2022, I worked full-time as an App Development Student Co-op at Ameren. I continued this role part-time from January 2022 to May 2022. In May 2022, I switched over to work as a full-time Digital Software Intern for the summer. I have also participated in extracuriculars that have given me experience in Computer Science. I was elected as the Chief Software engineer of the Multirotor Design Team, a student design team focussed around autonomous drones, for the 2022-23 school year. My term as the CSE began in August of 2022. As a member of the Computer Vision Team on the Multirotor Design Team, I have developed Computer Vision algorithms to process camera data in order to locate competition objectives. I worked as a Computer Vision Team member from August 2019 to August 2020 and August 2021 to August 2022. I was the Computer Vision Team lead for the team from August 2020 to August 2021. As the Vision Team Lead, I led and mentored members of the computer vision team in order to achieve competition goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <table id="Technical Skills">
-                    <tr>
-                        <th colspan="2">Technical Skills</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/aws_logo.png" alt="AWS Logo">
-                        </td>
-                        <td>
-                            <h1>AWS</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I have worked with AWS in my role as TECDP Senior Analyst at The Cigna Group. I worked frequently with a variety of AWS resources in production, including <b>DynamoDB</b>, <b>S3</b>, <b>Glue</b>, and <b>Step Functions</b>. I have obtained two certifications from AWS: <b>Amazon Web Services Certified Solutions Architect - Associate</b>, and <b>Amazon Web Services Certified Cloud Practitioner</b>.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/Git-Icon.png" alt="Git Logo">
-                        </td>
-                        <td>
-                            <h1>Git</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I use <b>Git</b> for every project I do. I have experience using Git through GitHub for my personal projects, and I have used GitLab for classes, including <b>Data Structures</b>. I us Git to better organize my projects and workflow, as well as to keep track of changes.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/Linux_logo.png" alt="Linux Logo">
-                        </td>
-                        <td>
-                            <h1>Linux</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I use <b>Linux</b>, both running in virtual machines and on Windows Subsystem for Linux, for personal, organizational, and class project development. I have experience using Linux to develop most of my projects as it is a versatile operating system that meets my development needs.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../data/images/Microsoft_Office_Logo.png" alt="Microsoft Office Logo">
-                        </td>
-                        <td>
-                            <h1>Microsoft Office</h1>
-                            <h2>Strong Knowledge and Experience</h2>
-                            <p>I frequently use <b>Microsoft Office</b> applications for classes and personal projects. I have experience using Microsoft <b>Word</b>, <b>Excel</b>, and <b>Powerpoint</b>.</p>
-                        </td>
-                    </tr>
-                </table>
+            <!-- Skills Container -->
+            <div class="skills-container">
+                <div class="container">
+                    <!-- Programming Languages and Libraries Section -->
+                    <section class="skills-section programming-section">
+                        <h2 class="section-title">Programming Languages & Libraries</h2>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/python.svg" alt="Python">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">Python</div>
+                                        <div class="skill-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have used Python for many personal, organizational, and professionsal projects. I utilized Python in my position as an App Development Student Co-op at Ameren for various automation tasks like generating PDF documents and updating databases. Additionally, in my role as a TECDP Senior Analyst at The Cigna Group, I used Python for creating scripts to automate repetitive tasks, including programmatically accessing APIs and tabulating data. As a member of Multirotor Design Team, I used Python for Computer Vision tasks, such as object identification with drones. In addition, I have used Python for projects in classes including Introduction to Artificial Intelligence and Game Theory for Computer Science.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/cplusplus.svg" alt="C++">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">C++</div>
+                                        <div class="skill-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have used C++ in many classes for various projects, as well as for personal projects. Classes taken include Data Structures and Introduction to Operating Systems.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/numpy.svg" alt="NumPy">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">NumPy</div>
+                                        <div class="skill-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I frequently use the NumPy Python library in my projects, as it makes array calculations more efficient and quicker when compared to standard Python.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/opencv.svg" alt="OpenCV">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">OpenCV</div>
+                                        <div class="skill-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I've used the OpenCV Python library in my capacity working on computer vision tasks as part of the Multirotor Design Team.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/sqlite.svg" alt="SQL">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">SQL</div>
+                                        <div class="skill-level">Knowledgeable and Experienced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have used SQL in professionsal roles with Ameren and The Cigna Group to access and work with databases. I have experience creating Oracle SQL databases, as well as working with various other kinds of SQL databases such as Microsoft SQL Server.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/javascript.svg" alt="JavaScript">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">JavaScript</div>
+                                        <div class="skill-level">Knowledgeable and Experienced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have learned JavaScript through self-research and industry work experience. In my role as an App Development Student Co-op at Ameren, I utilized Javascript to develop several Web Application Widgets.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/oracle.svg" alt="Java">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">Java</div>
+                                        <div class="skill-level">Knowledgeable</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have learned Java through a high school course and self-research. I have used Java for projects in that course and gained knowledge of the language through personal testing.
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/amazonaws.svg" alt="Boto3">
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-name">Boto3</div>
+                                        <div class="skill-level">Knowledgeable</div>
+                                    </div>
+                                </div>
+                                <div class="skill-description">
+                                    I have used the Boto3 Python library to work with AWS resources, including DynamoDB, Glue, and S3, in my role as a TECDP Senior Analyst at Cigna.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Technical Skills Section -->
+                    <section class="skills-section technical-section">
+                        <h2 class="section-title">Technical Skills</h2>
+                        <div class="technical-skills-grid">
+                            <div class="tech-category">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/amazonaws.svg" alt="AWS">
+                                    </div>
+                                    <div class="tech-info">
+                                        <h3>Amazon Web Services (AWS)</h3>
+                                        <div class="tech-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="tech-description">
+                                    I have worked with AWS in my role as TECDP Senior Analyst at The Cigna Group. I worked frequently with a variety of AWS resources in production, including DynamoDB, S3, Glue, and Step Functions. I have obtained two certifications from AWS: Amazon Web Services Certified Solutions Architect - Associate, and Amazon Web Services Certified Cloud Practitioner.
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/git.svg" alt="Git">
+                                    </div>
+                                    <div class="tech-info">
+                                        <h3>Git & Version Control</h3>
+                                        <div class="tech-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="tech-description">
+                                    I use Git for every project I do. I have experience using Git through GitHub for my personal projects, and I have used GitLab for classes, including Data Structures. I us Git to better organize my projects and workflow, as well as to keep track of changes.
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/linux.svg" alt="Linux">
+                                    </div>
+                                    <div class="tech-info">
+                                        <h3>Linux</h3>
+                                        <div class="tech-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="tech-description">
+                                    I use Linux, both running in virtual machines and on Windows Subsystem for Linux, for personal, organizational, and class project development. I have experience using Linux to develop most of my projects as it is a versatile operating system that meets my development needs.
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <div class="tech-header">
+                                    <div class="tech-icon">
+                                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/11.14.0/microsoft.svg" alt="Microsoft Office">
+                                    </div>
+                                    <div class="tech-info">
+                                        <h3>Microsoft Office</h3>
+                                        <div class="tech-level">Strong Knowledge and Experience</div>
+                                    </div>
+                                </div>
+                                <div class="tech-description">
+                                    I frequently use Microsoft Office applications for classes and personal projects. I have experience using Microsoft Word, Excel, and Powerpoint.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
+        </main>
 
         <!--Footer-->
         <div include-html="/pages/elements/footer.html"></div>
