@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AutoHotkey Productivity Scripts - Cameron Falls</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Cameron Falls webpage">
+        <meta name="keywords" content="Cameron,Falls">
+        <link rel="stylesheet" type="text/css" href="../../styling/general.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/header.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/footer.css">
+        <link rel="stylesheet" type="text/css" href="../../styling/pages/posts.css">
+        <script src="../../scripting/includeHTML.js"></script> <!--includeHTML()-->
+    </head>
+
+    <body>
+        <!--Header-->
+        <div include-html="/pages/elements/header.html"></div>
+
+        <!--Main Content-->
+        <main class="main-content">
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Streamlining My Workflow with Custom AutoHotkey Scripts</h1>
+                    <p class="page-subtitle"><b>Date Posted:</b> 8/13/2025</p>
+                </div>
+                <br>
+                <div class="post-actions">
+                    <a href="https://github.com/fallscameron01/Autohotkey_Scripts" class="github-button">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.15.0/github.svg" alt="GitHub" class="github-logo">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+
+            <section class="posts-section">
+                <div class="container post-page">
+                    <p>
+                        As someone who spends considerable time working on various projects and switching between different applications, I've always been interested in ways to optimize my workflow. After repeatedly finding myself performing the same sequences of actions, I decided to automate these tasks using AutoHotkey. The result is a collection of custom scripts that have significantly improved my daily productivity.
+                    </p>
+
+                    <h2>Why AutoHotkey?</h2>
+                    <p>
+                        AutoHotkey is a powerful scripting language for Windows that allows you to automate almost anything by sending keystrokes, mouse clicks, and manipulating windows. What makes it particularly appealing is its ability to create custom hotkey combinations that can trigger complex sequences of actions with a single key press. This makes it perfect for repetitive tasks that would otherwise interrupt your flow state.
+                    </p>
+
+                    <h2>AI Assistant Quick Access</h2>
+                    <p>
+                        One of the most valuable aspects of my script collection is the quick access to various AI assistants. In today's development landscape, AI tools have become integral to productivity, but constantly switching between browser tabs or bookmarks can be disruptive.
+                    </p>
+                    <p>
+                        My solution was to create dedicated hotkeys for each AI service I use regularly. <strong>Win + Numpad1</strong> opens ChatGPT, <strong>Ctrl + Win + Numpad1</strong> opens Lumo, <strong>Win + Numpad0</strong> opens my local Open WebUI instance, <strong>Ctrl + Win + Numpad0</strong> opens GitHub Copilot, and <strong>Alt + Win + Numpad1</strong> opens Claude. Each script intelligently checks if the window already exists and activates it, or opens a new Firefox window if needed. The windows are automatically positioned and sized consistently, and set to always-on-top mode for easy reference while working.
+                    </p>
+                    <p>
+                        The scripts include sophisticated window management logic. When opening an AI assistant, the script first checks if the window exists on a secondary monitor and moves it to the main screen if necessary to avoid resize issues. Then it positions the window precisely at coordinates that work well with my dual-monitor setup. This eliminates the manual positioning I used to do.
+                    </p>
+
+                    <h2>Development Tools Integration</h2>
+                    <p>
+                        Beyond AI assistants, the scripts provide quick access to essential development tools. <strong>Win + Numpad3</strong> opens Notepad++ with a new file ready for editing.
+                    </p>
+                    <p>
+                        File navigation is streamlined through <strong>Win + Numpad4</strong>, which opens Windows Terminal and automatically runs the <code>lfcd</code> command. This integrates with the <code>lf</code> file manager, providing a keyboard-driven file browsing experience. For administrative tasks, <strong>Ctrl + Win + Numpad4</strong> does the same but with elevated privileges using <code>sudo</code>.
+                    </p>
+
+                    <h2>Gaming Performance Optimization</h2>
+                    <p>
+                        An interesting aspect of the script collection addresses gaming performance through Lossless Scaling integration. <strong>Win + Numpad2</strong> opens Lossless Scaling and automatically configures it for 2x frame generation, while <strong>Ctrl + Win + Numpad2</strong> sets it to adaptive 165Hz mode. The script handles the complex positioning on secondary monitors and navigates through the interface programmatically, then activates the frame generation for the game.
+                    </p>
+
+                    <h2>Window Management</h2>
+                    <p>
+                        Two of my most frequently used hotkeys address window management pain points that Windows doesn't handle elegantly by default. <strong>Ctrl + Win + Down Arrow</strong> minimizes the current window while intelligently avoiding system windows like the desktop or taskbar, then automatically shifts focus to the next available window. Its counterpart, <strong>Ctrl + Win + Up Arrow</strong>, restores the most recently minimized window, creating an efficient minimize/restore workflow.
+                    </p>
+
+                    <h2>Technical Implementation</h2>
+                    <p>
+                        The scripts are built using AutoHotkey v2.0 and include several helper functions that ensure reliable operation. The <code>ActivateWindowUntilActive</code> function repeatedly attempts to activate a window until it succeeds, handling cases where the first attempt might fail. <code>WinLoaded</code> waits for windows to fully appear before proceeding with positioning or interaction.
+                    </p>
+                    <p>
+                        A particularly important helper is <code>WinKeyPressed</code>, which prevents additional shortcuts from being accidently pressed by the script. This avoids accidental system actions like locking the computer if the script sends 'L' while the Windows key is held down.
+                    </p>
+                    <p>
+                        Each application script uses specific window titles or classes for detection, ensuring the scripts work consistently even when browser tabs change or applications update their interfaces. The Firefox-based tools use specific page titles, while native applications use their executable names or window classes.
+                    </p>
+
+                    <h2>Daily Productivity Impact</h2>
+                    <p>
+                        The cumulative effect of these automations is substantial. Tasks that previously required multiple steps, precise mouse positioning, and mental context switching now happen instantly with muscle memory keystrokes. The consistent window positioning means I always know where to look for specific tools, reducing cognitive load.
+                    </p>
+                    <p>
+                        The journal integration through <strong>Win + Numpad5</strong> automatically opens today's entry in Joplin, making daily note-taking frictionless. This seemingly small automation has dramatically improved my consistency.
+                    </p>
+
+                    <h2>Future Enhancements</h2>
+                    <p>
+                        The script collection continues to evolve based on my changing workflow needs. The modular nature of AutoHotkey makes these scripts easy to extend and modify. Each hotkey is self-contained, making it simple to add new applications or adjust existing behaviors without affecting the entire system.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <div include-html="/pages/elements/footer.html"></div>
+
+        <script>includeHTML();</script>
+    </body>
+</html>
