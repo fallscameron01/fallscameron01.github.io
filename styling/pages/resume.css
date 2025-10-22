@@ -56,26 +56,37 @@
 /* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
     .page-header {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
+        padding: 40px 20px 30px;
     }
 
-    .page-header h1 {
+    .page-title {
         font-size: 2.2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .resume-controls {
+        margin-top: 20px;
+    }
+
+    .download-button {
+        padding: 12px 25px;
+        font-size: 1rem;
     }
 
     .resume-section {
         padding: 30px 20px 40px 20px;
     }
 
+    .resume-viewer {
+        border-radius: 5px;
+    }
+
     .resume-iframe {
         height: 70vh;
         min-height: 500px;
-    }
-
-    .download-button {
-        padding: 12px 25px;
-        font-size: 1rem;
+        border-radius: 5px;
     }
 }
